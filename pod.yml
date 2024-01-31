@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod 
 metadata:
   name: my-pod
+  namespace: my-ns
   labels:
     app: my-app
 spec:
@@ -13,17 +14,4 @@ spec:
     - containerPort: 80
 ...
 
----
-apiVersion: v1
-kind: Service
-metadata: 
-  name: node-srv
-spec:
-  selector:
-    app: my-app
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: NodePort
-... 
+
