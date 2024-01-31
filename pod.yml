@@ -19,7 +19,7 @@ kind: Service
 metadata: 
   name: node-srv
 spec:
-  setector:
+  selector:
     app: my-app
   ports:
     - protocol: TCP
