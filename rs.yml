@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: my-rs
+sepc: 
+  replicas: 3
+  selector:
+    matchLabels:
+      team: dev
+  templete: 
+    metadata: 
+      labels: 
+        team: dev
+    spec:
+      containers:
+      - name: c00
+        image: nginx
+        ports: 
+         containerPort: 80
