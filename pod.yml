@@ -7,4 +7,4 @@ spec:
   - name: my-pod
     image: httpd
     ports:
-    - containerport: 80
+    - containerPort: 80
