@@ -10,6 +10,7 @@ spec:
    team: dev
  template:
   metadata:
+   labels:
     team: dev
   spec: 
    containers:
