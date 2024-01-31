@@ -5,6 +5,6 @@ metadata:
 spec:
   containers: 
   - name: my-pod
-    image: httpd
+    image: nginx
     ports:
     - containerPort: 80
