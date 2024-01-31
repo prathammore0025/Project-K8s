@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Pod 
 metadata:
  name: my-pod
- lable:
+ label:
   app: my-app
 spec:
   containers: 
   - name: c00
     image: httpd
     port:
-     containerport: 
-      port: 80
+    - containerport: 
+       port: 80
