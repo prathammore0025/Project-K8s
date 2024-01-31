@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       team: dev
-  templete: 
+  template: 
     metadata: 
       labels: 
         team: dev
