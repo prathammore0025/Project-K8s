@@ -7,7 +7,6 @@ spec:
   - name: my-pod
     image: httpd
     ports:
-    - containerPort: 
-      port: 80
+    - containerPort: 80
       protocol: TCP
       targetPort: 80
