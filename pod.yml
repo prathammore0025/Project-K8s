@@ -4,7 +4,7 @@ metadata:
   name: my-pod
 spec:
   containers: 
-  - name: c00
+  - name: my-pod
     image: httpd
     ports:
     - containerport: 80
