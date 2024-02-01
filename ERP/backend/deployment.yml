@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: prathammore0025/back:v1 
+          image: prathammore0025/backend:v1 
           ports:
             - containerPort: 8080
   replicas: 3
