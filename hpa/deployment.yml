@@ -1,21 +1,22 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: frontend
+    app: my-app
 spec:
   template:
     metadata:
       labels:
-        app: frontend
+        app: my-app
     spec:
       containers:
-        - name: frontend
-          image: prathammore0025/front:v1
+        - name: my-container
+          image: httpd
           ports:
             - containerPort: 80
-           resources:
+          resources:
             requests:
               cpu: 200m
               memory: 100Mi
@@ -25,24 +26,20 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend
+      app: my-app
   strategy:
     type: RollingUpdate
 ...
-
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
-  labels:
-    app: frontend
+  name: my-svc
 spec:
   ports:
     - port: 80
       targetPort: 80
       protocol: TCP
   selector:
-    app: frontend
-  type: LoadBalancer
+    app: my-app
 ...
