@@ -12,17 +12,17 @@ spec:
       port:
         number: 80
   rules:
-    - host: "adea431c2c7c746f5b62febbde528567-806771054.eu-west-3.elb.amazonaws.com"
+    - host: "a1a3676ea3a8d4d7a9e3025f6de45126-294ed71ef4fe261d.elb.us-east-1.amazonaws.com"
       http:
         paths:
-        - path: /laptop
+        - path: /mobile
           pathType: Prefix
           backend:
             service:
-              name: laptop-svc
+              name: mobile-svc
               port:
                 number: 80
-        - path: /home
+        - path: /laptop
           pathType: Prefix
           backend:
             service:
