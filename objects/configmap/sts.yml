@@ -24,7 +24,7 @@ spec:
           #     value: "shubham"
 
           ### Pass environment variable as ConfigMap
-           env:
+          env:
              - name: MYSQL_ROOT_PASSWORD
                valueFrom:
                  configMapKeyRef:
