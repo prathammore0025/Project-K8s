@@ -12,7 +12,7 @@ spec:
       port:
         number: 80
   rules:
-    - host: "a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com"
+    - host: "a1a3676ea3a8d4d7a9e3025f6de45126-294ed71ef4fe261d.elb.us-east-1.amazonaws.com"
       http:
         paths:
         - path: /mobile
