@@ -13,8 +13,8 @@ spec:
         number: 80
   tls:
   - hosts:
-      - a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com
-     secretName: ingress-tls
+      - "a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com"
+     secretName: ingress-tls  
   rules:
     - host: "a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com"
       http:
