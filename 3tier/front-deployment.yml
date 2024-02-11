@@ -35,7 +35,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-svc
+  name: front-svc
 spec:
   ports:
     - port: 80
