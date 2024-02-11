@@ -6,7 +6,7 @@ spec:
   scaleTargetRef:        
     apiVersion: apps/v1
     kind: Deployment
-    name: 3-tier
+    name: 3-tier-back
   minReplicas: 1
   maxReplicas: 10
   metrics:

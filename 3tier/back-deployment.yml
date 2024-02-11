@@ -1,7 +1,8 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 3tier
+  name: 3tier-back
   labels:
     app: my-app
 spec:
@@ -28,3 +29,19 @@ spec:
       app: my-app
   strategy:
     type: RollingUpdate
+...
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-svc
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080 
+      protocol: TCP
+  type: NodePort    
+  selector:
+    app: my-app
+...
