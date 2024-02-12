@@ -13,7 +13,7 @@ spec:
         number: 80
   tls:
   - hosts: 
-      - "acfcf576f5f34498c9380ff7df15f9b5-9020de9ec6affdae.elb.eu-west-3.amazonaws.com"
+    - "acfcf576f5f34498c9380ff7df15f9b5-9020de9ec6affdae.elb.eu-west-3.amazonaws.com"
      secretName: testsecret-tls  
   rules:
     - host: "acfcf576f5f34498c9380ff7df15f9b5-9020de9ec6affdae.elb.eu-west-3.amazonaws.com"
