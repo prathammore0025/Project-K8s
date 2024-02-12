@@ -13,10 +13,10 @@ spec:
         number: 80
   tls:
   - hosts: 
-      - "a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com"
+      - "acfcf576f5f34498c9380ff7df15f9b5-9020de9ec6affdae.elb.eu-west-3.amazonaws.com"
      secretName: testsecret-tls  
   rules:
-    - host: "a8375bdfbd727419a84886318aaf60e4-979a36593be7f291.elb.eu-west-3.amazonaws.com"
+    - host: "acfcf576f5f34498c9380ff7df15f9b5-9020de9ec6affdae.elb.eu-west-3.amazonaws.com"
       http:
         paths:
         - path: /mobile
