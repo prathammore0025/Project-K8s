@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: student
-          image:  prathammore0025/new:f
+          image:  prathammore0025/k8s:front
           ports:
             - containerPort: 80
           resources:
